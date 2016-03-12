@@ -1,0 +1,23 @@
+{
+  "name": "bower",
+  "authors": [
+    "donald93 <blargalicious@gmail.com>"
+  ],
+  "description": "dependencies",
+  "main": "bower.json",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "react": "^0.14.7"
+  }
+}
