@@ -8,6 +8,9 @@ SITE_NAME = basename(DJANGO_ROOT)
 
 SECRET_KEY = 'te2!8y3vgm+x)v7aznbd0)!fs!#1c$ochzu*z#)gi3dem&#9bz'
 
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ROOT_URLCONF = 'urls.py'
+
 INSTALLED_APPS = (
             'django.contrib.staticfiles',
 
@@ -58,7 +61,7 @@ PIPELINE_COMPILERS = (
 PIPELINE_CSS_COMPRESSOR = 'pipeline.compressors.NoopCompressor'  
 PIPELINE_JS_COMPRESSOR = 'pipeline.compressors.uglifyjs.UglifyJSCompressor'
 
-PIPELINE_CSS = {  
+PIPELINE = {  
         'mysite_css': {
             'source_filenames': (
                     'css/style.css',
@@ -67,7 +70,7 @@ PIPELINE_CSS = {
         },
     }
 
-PIPELINE_JS = {  
+PIPELINE = {  
     'mysite_js': {
         'source_filenames': (
                 'js/bower_components/jquery/dist/jquery.min.js',
@@ -77,4 +80,6 @@ PIPELINE_JS = {
                 ),
         'output_filename': 'js/mysite_js.js',
     }
+
+#trying to make it work
 }
