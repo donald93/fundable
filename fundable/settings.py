@@ -14,6 +14,9 @@ DEBUG = 1
 
 INSTALLED_APPS = (  
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.contenttypes',
+    'django.contrib.auth',
 
     # Pipeline
     'pipeline',
